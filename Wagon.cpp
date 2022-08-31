@@ -35,12 +35,11 @@ void Wagon::emptyWagon() {
     Caps[i].~Capybara();
     count = 0;
   }
-  cout << "Empty!" << endl;
 };
 void Wagon::printCapybaras() {
-  cout << count << endl;
+  
   for (int i = 0; i < count; i++)
-    cout  << Caps[i].getName()
+    cout  << Caps[i].getName() << " "
           << Caps[i].getAge() << endl;
 }
 
