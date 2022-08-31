@@ -25,9 +25,9 @@ void Airplane::setCoPilot(Person theCoPilot){this->cPilot=theCoPilot;};
 Person Airplane::getCoPilot(){return this->cPilot;}
 
 void Airplane::printDetails(){
-    cout <<"Call sign: "<< cSign << endl;
-    cout<<"Pilot name: " << tPilot.getName() << endl;
-    cout<<"Pilot name: " << cPilot.getName() << endl;
+    cout << cSign << endl;
+    cout << tPilot.getName() << endl;
+    cout<< cPilot.getName() << endl;
 }
 
 Airplane::~Airplane(){};
