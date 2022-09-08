@@ -9,14 +9,14 @@ using namespace std;
 Orchestra::Orchestra() {
   mSize = 0; // Set max size current size and pointer member
   cSize = 0;
-  members = NULL;
+  members = NULL; 
 }
 
 Orchestra::Orchestra(int size)
 {
     mSize = size;
     cSize = 0;
-    members = new Musician[size];
+    members = new Musician[size]; // create a dynamic array with type is class Musician
 }
 
 int Orchestra::get_current_number_of_members(){return cSize;};
@@ -30,7 +30,7 @@ bool Orchestra::has_instrument(std::string instrument)
 }
 
 Musician* Orchestra::get_members(){return members;};
-bool Orchestra::add_musician(Musician new_musician)
+bool Orchestra::add_musician(Musician new_musician) // new_musician have type Musician
 {
   if (cSize < mSize){
     members[cSize] = new_musician;

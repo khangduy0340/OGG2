@@ -6,9 +6,10 @@
 using namespace std;
 class Orchestra {
  private:
+  // Set the private value
   int cSize;
   int mSize;
-  Musician* members;
+  Musician* members; // Set a pointer members to class musician 
 
  public:
   Orchestra();          // default constructor
