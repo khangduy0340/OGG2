@@ -17,10 +17,12 @@ int main() {
   }
   cout << "Number of stock with code 3102 is: " << t1.get_stock_count(3102)<<endl;
   Truck *cTruck = t1.get_current_stock_list(); 
-  cout << "Musician's Instrument and their Experience in orchestra : " << endl;
   for (int i = 0; i < t1.get_total_stock_count(); i++)
     cout << cTruck[i].get_brand_name() << " " << cTruck[i].get_brand_code()
          << endl;
+
+  t1.get_total_stock_count();
+  t1.get_stock_count(3102);
   delete (cTruck);
   return 0;
 }

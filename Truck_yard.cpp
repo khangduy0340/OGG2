@@ -30,7 +30,7 @@ bool Truck_yard::add_stock(Truck c)
 {
   if (cCapacity < mCapacity){
     cTruck[cCapacity] = c;
-    cCapacity;
+    cCapacity++;
     return true;
   }
   return false;
